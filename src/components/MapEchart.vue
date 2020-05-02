@@ -156,6 +156,7 @@ export default {
       })
     },
     getTrendFunc (params) {
+      if (this.trendChart) this.trendChart.clear()
       let successCallBack = (res) => {
         let resObj = res.data
         this.drawTrendChart(resObj)
