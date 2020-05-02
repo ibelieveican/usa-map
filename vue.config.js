@@ -1,6 +1,6 @@
 const IS_PROD = ['production', 'test'].includes(process.env.NODE_ENV)
 const path = require('path')
-const Mock = require('./public/mock/mock')
+const Mock = require('./mock/mock')
 
 function resolve (dir) {
     return path.join(__dirname, dir);
@@ -15,11 +15,11 @@ module.exports = {
         changeOrigin: true,
         pathRewrite: {
           '^/mock': ''
-        },
-        before: function(app, server, compiler) {
-          Mock(app)
         }
       }
+    },
+    before: app => {
+      Mock(app)
     }
   },
 
@@ -29,7 +29,6 @@ module.exports = {
     loaderOptions: {}, // css预设器配置项
     requireModuleExtension: false // 启用 CSS modules for all css / pre-processor files.
   },
-
   configureWebpack: {
     resolve: {
       extensions: ['.js', '.vue', '.json'],

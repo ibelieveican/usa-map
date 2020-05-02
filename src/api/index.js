@@ -22,7 +22,6 @@ const sendAxios = async ({url, type, data, success, error, enableAbortRequest = 
     if (error) {
       error(err)
     } else {
-      // this.$Message.error(err)
       console.log('请求错误:' + url)
       console.log(err)
     }
