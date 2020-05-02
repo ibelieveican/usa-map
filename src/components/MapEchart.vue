@@ -163,7 +163,7 @@ export default {
       this.trendTitle = params.stateInfo.state_name
       this.showTrendChart = true
       this.$api.daily_perception_state_id({
-        url: '/api/daily_perception/state_id/' + params.stateInfo.state_id,
+        url: 'https://api.prossier.org/api/daily_perception/state_id/' + params.stateInfo.state_id,
         success: successCallBack
       })
     },

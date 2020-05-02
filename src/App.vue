@@ -13,7 +13,7 @@
           <div slot="content" style="height:100%;">
             <happy-scroll resize smaller-move-v="start" :min-length-v="10" color="#6E6F7D">
               <ul class="info-list">
-                <li v-for="item in statesPerception" :key="item.state.state_name"><span>{{item.state.state_name}}</span><span>{{Math.round(item.perception * 100)}}%</span></li>
+                <li v-for="item in statesPerception" :key="item.state.state_name + item.perception"><span>{{item.state.state_name}}</span><span>{{Math.round(item.perception * 100)}}%</span></li>
               </ul>
             </happy-scroll>
           </div>
@@ -84,7 +84,17 @@ export default {
       let sendData = {}
       let successCallBack = (res) => {
         let resObj = res.data
-        this.statesPerception = resObj
+        this.statesPerception = resObj.sort((obj1, obj2) => {
+          let val1 = obj1.perception
+          let val2 = obj2.perception
+          if (val1 < val2) {
+              return 1
+          } else if (val1 > val2) {
+              return -1
+          } else {
+              return 0;
+          }
+        })
       }
       this.$api.daily_perception_latest({
         data: sendData,

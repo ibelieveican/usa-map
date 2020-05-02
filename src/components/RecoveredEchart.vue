@@ -23,7 +23,6 @@ export default {
       })
     },
     drawChart (resObj) {
-      console.log(resObj.timeline.recovered)
       let recoveredObj = resObj.timeline.recovered
       let xAxis = Object.keys(recoveredObj).map(item => {
         return item
@@ -71,7 +70,7 @@ export default {
           splitNumber: 4,
           scale: true,
           min: 0,
-          max: 120,
+          // max: 120,
           axisLine: {
             show: false
           },

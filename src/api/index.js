@@ -1,6 +1,6 @@
 import Axios from 'axios'
-const IS_PROD = ['production', 'test'].includes(process.env.NODE_ENV)
-Axios.defaults.baseURL = IS_PROD ? '' : '/mock'// 配置接口地址
+// const IS_PROD = ['production', 'test'].includes(process.env.NODE_ENV)
+// Axios.defaults.baseURL = IS_PROD ? '' : '/mock'// 配置接口地址
 const CancelToken = Axios.CancelToken
 // eslint-disable-next-line
 window.abortRequest
@@ -38,7 +38,17 @@ const sendAxios = async ({url, type, data, success, error, enableAbortRequest = 
 
 const getStates = ({type = 'get', data = {}, success, error}) => {
   sendAxios({
-    url: '/v2/states',
+    url: 'https://api.prossier.org/api/statescovid',
+    type: type,
+    data: data,
+    success: success,
+    error: error
+  })
+}
+
+const all = ({type = 'get', data = {}, success, error}) => {
+  sendAxios({
+    url: 'https://api.prossier.org/api/allcovid',
     type: type,
     data: data,
     success: success,
@@ -48,7 +58,7 @@ const getStates = ({type = 'get', data = {}, success, error}) => {
 
 const daily_perception_latest = ({type = 'get', data = {}, success, error}) => {
   sendAxios({
-    url: '/api/daily_perception/latest',
+    url: 'https://api.prossier.org/api/daily_perception/latest',
     type: type,
     data: data,
     success: success,
@@ -58,7 +68,7 @@ const daily_perception_latest = ({type = 'get', data = {}, success, error}) => {
 
 const state_reopening_status = ({type = 'get', data = {}, success, error}) => {
   sendAxios({
-    url: '/api/state_reopening_status',
+    url: 'https://api.prossier.org/api/state_reopening_status',
     type: type,
     data: data,
     success: success,
@@ -69,16 +79,6 @@ const state_reopening_status = ({type = 'get', data = {}, success, error}) => {
 const daily_perception_state_id = ({url, type = 'get', data = {}, success, error}) => {
   sendAxios({
     url: url,
-    type: type,
-    data: data,
-    success: success,
-    error: error
-  })
-}
-
-const all = ({type = 'get', data = {}, success, error}) => {
-  sendAxios({
-    url: '/v2/all',
     type: type,
     data: data,
     success: success,
@@ -98,7 +98,7 @@ const historical = ({type = 'get', data = {}, success, error}) => {
 
 const us_daily_perception = ({type = 'get', data = {}, success, error}) => {
   sendAxios({
-    url: '/api/us_daily_perception',
+    url: 'https://api.prossier.org/api/us_daily_perception',
     type: type,
     data: data,
     success: success,
