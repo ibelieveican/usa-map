@@ -40,7 +40,12 @@ export default {
         },
         tooltip: {
           trigger: 'axis',
-          confine: true
+          confine: true,
+          formatter(params){
+           for(let x in params){
+            return params[x].name + '<br/>' +params[x].value + 'k'
+           }
+          }
         },
         xAxis: {
           type: 'category',
@@ -70,7 +75,6 @@ export default {
           splitNumber: 4,
           scale: true,
           min: 0,
-          // max: 120,
           axisLine: {
             show: false
           },
