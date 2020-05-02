@@ -1,0 +1,559 @@
+[{
+	"state": "New York",
+	"cases": 306158,
+	"todayCases": 0,
+	"deaths": 23474,
+	"todayDeaths": 0,
+	"active": 234511,
+	"tests": 872481,
+	"testsPerOneMillion": 44472
+}, {
+	"state": "New Jersey",
+	"cases": 116264,
+	"todayCases": 0,
+	"deaths": 6770,
+	"todayDeaths": 0,
+	"active": 108223,
+	"tests": 240246,
+	"testsPerOneMillion": 27049
+}, {
+	"state": "Massachusetts",
+	"cases": 60265,
+	"todayCases": 0,
+	"deaths": 3405,
+	"todayDeaths": 0,
+	"active": 48742,
+	"tests": 265618,
+	"testsPerOneMillion": 38889
+}, {
+	"state": "Illinois",
+	"cases": 50355,
+	"todayCases": 0,
+	"deaths": 2215,
+	"todayDeaths": 0,
+	"active": 47534,
+	"tests": 256667,
+	"testsPerOneMillion": 20018
+}, {
+	"state": "California",
+	"cases": 48746,
+	"todayCases": 181,
+	"deaths": 1944,
+	"todayDeaths": 5,
+	"active": 43465,
+	"tests": 603139,
+	"testsPerOneMillion": 15406
+}, {
+	"state": "Pennsylvania",
+	"cases": 45865,
+	"todayCases": 137,
+	"deaths": 2354,
+	"todayDeaths": 0,
+	"active": 42746,
+	"tests": 214884,
+	"testsPerOneMillion": 16799
+}, {
+	"state": "Michigan",
+	"cases": 40399,
+	"todayCases": 0,
+	"deaths": 3670,
+	"todayDeaths": 0,
+	"active": 28387,
+	"tests": 177228,
+	"testsPerOneMillion": 17798
+}, {
+	"state": "Florida",
+	"cases": 33193,
+	"todayCases": 0,
+	"deaths": 1218,
+	"todayDeaths": 0,
+	"active": 31289,
+	"tests": 375300,
+	"testsPerOneMillion": 18220
+}, {
+	"state": "Louisiana",
+	"cases": 27660,
+	"todayCases": 0,
+	"deaths": 1845,
+	"todayDeaths": 0,
+	"active": 8512,
+	"tests": 156568,
+	"testsPerOneMillion": 33572
+}, {
+	"state": "Texas",
+	"cases": 27566,
+	"todayCases": 0,
+	"deaths": 749,
+	"todayDeaths": 0,
+	"active": 15031,
+	"tests": 300384,
+	"testsPerOneMillion": 10772
+}, {
+	"state": "Connecticut",
+	"cases": 26767,
+	"todayCases": 0,
+	"deaths": 2168,
+	"todayDeaths": 0,
+	"active": 24534,
+	"tests": 94818,
+	"testsPerOneMillion": 26474
+}, {
+	"state": "Georgia",
+	"cases": 25690,
+	"todayCases": 39,
+	"deaths": 1099,
+	"todayDeaths": 1,
+	"active": 24560,
+	"tests": 143790,
+	"testsPerOneMillion": 13964
+}, {
+	"state": "Maryland",
+	"cases": 20849,
+	"todayCases": 0,
+	"deaths": 1078,
+	"todayDeaths": 0,
+	"active": 18508,
+	"tests": 110929,
+	"testsPerOneMillion": 18478
+}, {
+	"state": "Ohio",
+	"cases": 17303,
+	"todayCases": 0,
+	"deaths": 937,
+	"todayDeaths": 0,
+	"active": 16246,
+	"tests": 128206,
+	"testsPerOneMillion": 11012
+}, {
+	"state": "Indiana",
+	"cases": 17182,
+	"todayCases": 0,
+	"deaths": 1065,
+	"todayDeaths": 0,
+	"active": 16103,
+	"tests": 91550,
+	"testsPerOneMillion": 13793
+}, {
+	"state": "Virginia",
+	"cases": 14961,
+	"todayCases": 0,
+	"deaths": 522,
+	"todayDeaths": 0,
+	"active": 12397,
+	"tests": 85307,
+	"testsPerOneMillion": 10139
+}, {
+	"state": "Colorado",
+	"cases": 14758,
+	"todayCases": 0,
+	"deaths": 766,
+	"todayDeaths": 0,
+	"active": 13433,
+	"tests": 69449,
+	"testsPerOneMillion": 12556
+}, {
+	"state": "Washington",
+	"cases": 14070,
+	"todayCases": 0,
+	"deaths": 801,
+	"todayDeaths": 0,
+	"active": 11418,
+	"tests": 187800,
+	"testsPerOneMillion": 25746
+}, {
+	"state": "Tennessee",
+	"cases": 10366,
+	"todayCases": 0,
+	"deaths": 195,
+	"todayDeaths": 0,
+	"active": 5031,
+	"tests": 168549,
+	"testsPerOneMillion": 25342
+}, {
+	"state": "North Carolina",
+	"cases": 10181,
+	"todayCases": 0,
+	"deaths": 381,
+	"todayDeaths": 0,
+	"active": 8498,
+	"tests": 118440,
+	"testsPerOneMillion": 11663
+}, {
+	"state": "Rhode Island",
+	"cases": 8247,
+	"todayCases": 0,
+	"deaths": 251,
+	"todayDeaths": 0,
+	"active": 7654,
+	"tests": 60165,
+	"testsPerOneMillion": 56941
+}, {
+	"state": "Missouri",
+	"cases": 7576,
+	"todayCases": 0,
+	"deaths": 338,
+	"todayDeaths": 0,
+	"active": 6691,
+	"tests": 73503,
+	"testsPerOneMillion": 12069
+}, {
+	"state": "Arizona",
+	"cases": 7202,
+	"todayCases": 0,
+	"deaths": 304,
+	"todayDeaths": 0,
+	"active": 6828,
+	"tests": 68813,
+	"testsPerOneMillion": 9906
+}, {
+	"state": "Alabama",
+	"cases": 6925,
+	"todayCases": 21,
+	"deaths": 262,
+	"todayDeaths": 7,
+	"active": 6643,
+	"tests": 85367,
+	"testsPerOneMillion": 17548
+}, {
+	"state": "Iowa",
+	"cases": 6843,
+	"todayCases": 0,
+	"deaths": 148,
+	"todayDeaths": 0,
+	"active": 4531,
+	"tests": 41337,
+	"testsPerOneMillion": 13196
+}, {
+	"state": "Mississippi",
+	"cases": 6569,
+	"todayCases": 0,
+	"deaths": 250,
+	"todayDeaths": 0,
+	"active": 6319,
+	"tests": 66094,
+	"testsPerOneMillion": 22114
+}, {
+	"state": "Wisconsin",
+	"cases": 6520,
+	"todayCases": 0,
+	"deaths": 308,
+	"todayDeaths": 0,
+	"active": 3002,
+	"tests": 73150,
+	"testsPerOneMillion": 12659
+}, {
+	"state": "South Carolina",
+	"cases": 5881,
+	"todayCases": 0,
+	"deaths": 232,
+	"todayDeaths": 0,
+	"active": 1948,
+	"tests": 54217,
+	"testsPerOneMillion": 10940
+}, {
+	"state": "Nevada",
+	"cases": 4898,
+	"todayCases": 0,
+	"deaths": 237,
+	"todayDeaths": 0,
+	"active": 1756,
+	"tests": 50526,
+	"testsPerOneMillion": 17287
+}, {
+	"state": "Delaware",
+	"cases": 4655,
+	"todayCases": 0,
+	"deaths": 144,
+	"todayDeaths": 0,
+	"active": 3338,
+	"tests": 21538,
+	"testsPerOneMillion": 22684
+}, {
+	"state": "Minnesota",
+	"cases": 4644,
+	"todayCases": 0,
+	"deaths": 319,
+	"todayDeaths": 0,
+	"active": 2282,
+	"tests": 66744,
+	"testsPerOneMillion": 12075
+}, {
+	"state": "Kentucky",
+	"cases": 4539,
+	"todayCases": 0,
+	"deaths": 235,
+	"todayDeaths": 0,
+	"active": 3182,
+	"tests": 54101,
+	"testsPerOneMillion": 12184
+}, {
+	"state": "Utah",
+	"cases": 4495,
+	"todayCases": 0,
+	"deaths": 45,
+	"todayDeaths": 0,
+	"active": 3562,
+	"tests": 102439,
+	"testsPerOneMillion": 33638
+}, {
+	"state": "District Of Columbia",
+	"cases": 4106,
+	"todayCases": 0,
+	"deaths": 205,
+	"todayDeaths": 0,
+	"active": 3241,
+	"tests": 19229,
+	"testsPerOneMillion": 28092
+}, {
+	"state": "Kansas",
+	"cases": 3839,
+	"todayCases": 0,
+	"deaths": 134,
+	"todayDeaths": 0,
+	"active": 2936,
+	"tests": 28090,
+	"testsPerOneMillion": 9657
+}, {
+	"state": "Nebraska",
+	"cases": 3784,
+	"todayCases": 0,
+	"deaths": 68,
+	"todayDeaths": 0,
+	"active": 3694,
+	"tests": 25498,
+	"testsPerOneMillion": 13386
+}, {
+	"state": "Oklahoma",
+	"cases": 3473,
+	"todayCases": 0,
+	"deaths": 214,
+	"todayDeaths": 0,
+	"active": 940,
+	"tests": 61619,
+	"testsPerOneMillion": 15727
+}, {
+	"state": "New Mexico",
+	"cases": 3213,
+	"todayCases": 0,
+	"deaths": 112,
+	"todayDeaths": 0,
+	"active": 2396,
+	"tests": 65085,
+	"testsPerOneMillion": 31105
+}, {
+	"state": "Arkansas",
+	"cases": 3207,
+	"todayCases": 0,
+	"deaths": 59,
+	"todayDeaths": 0,
+	"active": 1869,
+	"tests": 46505,
+	"testsPerOneMillion": 15550
+}, {
+	"state": "Oregon",
+	"cases": 2446,
+	"todayCases": 0,
+	"deaths": 101,
+	"todayDeaths": 0,
+	"active": 1485,
+	"tests": 54472,
+	"testsPerOneMillion": 13345
+}, {
+	"state": "South Dakota",
+	"cases": 2373,
+	"todayCases": 0,
+	"deaths": 13,
+	"todayDeaths": 0,
+	"active": 868,
+	"tests": 16612,
+	"testsPerOneMillion": 19220
+}, {
+	"state": "New Hampshire",
+	"cases": 2054,
+	"todayCases": 0,
+	"deaths": 66,
+	"todayDeaths": 0,
+	"active": 1008,
+	"tests": 21921,
+	"testsPerOneMillion": 16315
+}, {
+	"state": "Idaho",
+	"cases": 1984,
+	"todayCases": 0,
+	"deaths": 60,
+	"todayDeaths": 0,
+	"active": 837,
+	"tests": 28240,
+	"testsPerOneMillion": 16732
+}, {
+	"state": "West Virginia",
+	"cases": 1109,
+	"todayCases": 0,
+	"deaths": 40,
+	"todayDeaths": 0,
+	"active": 588,
+	"tests": 43227,
+	"testsPerOneMillion": 23634
+}, {
+	"state": "Maine",
+	"cases": 1056,
+	"todayCases": 0,
+	"deaths": 52,
+	"todayDeaths": 0,
+	"active": 389,
+	"tests": 17807,
+	"testsPerOneMillion": 13360
+}, {
+	"state": "North Dakota",
+	"cases": 1033,
+	"todayCases": 0,
+	"deaths": 19,
+	"todayDeaths": 0,
+	"active": 577,
+	"tests": 25536,
+	"testsPerOneMillion": 33948
+}, {
+	"state": "Vermont",
+	"cases": 862,
+	"todayCases": 0,
+	"deaths": 47,
+	"todayDeaths": 0,
+	"active": 815,
+	"tests": 15429,
+	"testsPerOneMillion": 24687
+}, {
+	"state": "Hawaii",
+	"cases": 613,
+	"todayCases": 0,
+	"deaths": 16,
+	"todayDeaths": 0,
+	"active": 81,
+	"tests": 29862,
+	"testsPerOneMillion": 21000
+}, {
+	"state": "Wyoming",
+	"cases": 544,
+	"todayCases": 0,
+	"deaths": 7,
+	"todayDeaths": 0,
+	"active": 166,
+	"tests": 9306,
+	"testsPerOneMillion": 15994
+}, {
+	"state": "Montana",
+	"cases": 451,
+	"todayCases": 0,
+	"deaths": 16,
+	"todayDeaths": 0,
+	"active": 53,
+	"tests": 13528,
+	"testsPerOneMillion": 12986
+}, {
+	"state": "Alaska",
+	"cases": 355,
+	"todayCases": 0,
+	"deaths": 9,
+	"todayDeaths": 0,
+	"active": 106,
+	"tests": 19119,
+	"testsPerOneMillion": 25888
+}, {
+	"state": "Guam",
+	"cases": 145,
+	"todayCases": 0,
+	"deaths": 5,
+	"todayDeaths": 0,
+	"active": 10,
+	"tests": 605,
+	"testsPerOneMillion": 0
+}, {
+	"state": "Northern Mariana Islands",
+	"cases": 14,
+	"todayCases": 0,
+	"deaths": 2,
+	"todayDeaths": 0,
+	"active": 0,
+	"tests": 45,
+	"testsPerOneMillion": 0
+}, {
+	"state": "Puerto Rico",
+	"cases": 1433,
+	"todayCases": 0,
+	"deaths": 86,
+	"todayDeaths": 0,
+	"active": 956,
+	"tests": 13022,
+	"testsPerOneMillion": 3845
+}, {
+	"state": "United States Virgin Islands",
+	"cases": 62,
+	"todayCases": 0,
+	"deaths": 4,
+	"todayDeaths": 0,
+	"active": 7,
+	"tests": 872,
+	"testsPerOneMillion": 0
+}, {
+	"state": "Veteran Affairs",
+	"cases": 8274,
+	"todayCases": 0,
+	"deaths": 484,
+	"todayDeaths": 0,
+	"active": 7790,
+	"tests": 95680,
+	"testsPerOneMillion": 0
+}, {
+	"state": "US Military",
+	"cases": 6648,
+	"todayCases": 0,
+	"deaths": 27,
+	"todayDeaths": 0,
+	"active": 4514,
+	"tests": 0,
+	"testsPerOneMillion": 0
+}, {
+	"state": "Federal Prisons",
+	"cases": 1877,
+	"todayCases": 0,
+	"deaths": 31,
+	"todayDeaths": 0,
+	"active": 1300,
+	"tests": 0,
+	"testsPerOneMillion": 0
+}, {
+	"state": "Navajo Nation",
+	"cases": 1873,
+	"todayCases": 0,
+	"deaths": 60,
+	"todayDeaths": 0,
+	"active": 1813,
+	"tests": 9206,
+	"testsPerOneMillion": 0
+}, {
+	"state": "Grand Princess Ship",
+	"cases": 103,
+	"todayCases": 0,
+	"deaths": 3,
+	"todayDeaths": 0,
+	"active": 100,
+	"tests": 0,
+	"testsPerOneMillion": 0
+}, {
+	"state": "Wuhan Repatriated",
+	"cases": 3,
+	"todayCases": 0,
+	"deaths": 0,
+	"todayDeaths": 0,
+	"active": 3,
+	"tests": 3,
+	"testsPerOneMillion": 0
+}, {
+	"state": "Diamond Princess Ship",
+	"cases": 46,
+	"todayCases": 0,
+	"deaths": 0,
+	"todayDeaths": 0,
+	"active": 46,
+	"tests": 46,
+	"testsPerOneMillion": 0
+}]

@@ -1,0 +1,271 @@
+[{
+	"state_id": 1,
+	"state_name": "Alaska",
+	"state_abbr": "AK",
+	"state_capital": "Juneau"
+}, {
+	"state_id": 2,
+	"state_name": "Alabama",
+	"state_abbr": "AL",
+	"state_capital": "Montgomery"
+}, {
+	"state_id": 3,
+	"state_name": "Arizona",
+	"state_abbr": "AZ",
+	"state_capital": "Phoenix"
+}, {
+	"state_id": 4,
+	"state_name": "Arkansas",
+	"state_abbr": "AR",
+	"state_capital": "Little Rock"
+}, {
+	"state_id": 5,
+	"state_name": "California",
+	"state_abbr": "CA",
+	"state_capital": "Sacramento"
+}, {
+	"state_id": 6,
+	"state_name": "Colorado",
+	"state_abbr": "CO",
+	"state_capital": "Denver"
+}, {
+	"state_id": 7,
+	"state_name": "Connecticut",
+	"state_abbr": "CT",
+	"state_capital": "Hartford"
+}, {
+	"state_id": 8,
+	"state_name": "Delaware",
+	"state_abbr": "DE",
+	"state_capital": "Dover"
+}, {
+	"state_id": 9,
+	"state_name": "Florida",
+	"state_abbr": "FL",
+	"state_capital": "Tallahassee"
+}, {
+	"state_id": 10,
+	"state_name": "Georgia",
+	"state_abbr": "GA",
+	"state_capital": "Atlanta"
+}, {
+	"state_id": 11,
+	"state_name": "Hawaii",
+	"state_abbr": "HI",
+	"state_capital": "Honolulu"
+}, {
+	"state_id": 12,
+	"state_name": "Idaho",
+	"state_abbr": "ID",
+	"state_capital": "Boise"
+}, {
+	"state_id": 13,
+	"state_name": "Illinois",
+	"state_abbr": "IL",
+	"state_capital": "Springfield"
+}, {
+	"state_id": 14,
+	"state_name": "Indiana",
+	"state_abbr": "IN",
+	"state_capital": "Indianapolis"
+}, {
+	"state_id": 15,
+	"state_name": "Iowa",
+	"state_abbr": "IA",
+	"state_capital": "Des Moines"
+}, {
+	"state_id": 16,
+	"state_name": "Kansas",
+	"state_abbr": "KS",
+	"state_capital": "Topeka"
+}, {
+	"state_id": 17,
+	"state_name": "Kentucky",
+	"state_abbr": "KY",
+	"state_capital": "Frankfort"
+}, {
+	"state_id": 18,
+	"state_name": "Louisiana",
+	"state_abbr": "LA",
+	"state_capital": "Baton Rouge"
+}, {
+	"state_id": 19,
+	"state_name": "Maine",
+	"state_abbr": "ME",
+	"state_capital": "Augusta"
+}, {
+	"state_id": 20,
+	"state_name": "Maryland",
+	"state_abbr": "MD",
+	"state_capital": "Annopolis"
+}, {
+	"state_id": 21,
+	"state_name": "Massachusetts",
+	"state_abbr": "MA",
+	"state_capital": "Boston"
+}, {
+	"state_id": 22,
+	"state_name": "Michigan",
+	"state_abbr": "MI",
+	"state_capital": "Lansing"
+}, {
+	"state_id": 23,
+	"state_name": "Minnesota",
+	"state_abbr": "MN",
+	"state_capital": "Saint Paul"
+}, {
+	"state_id": 24,
+	"state_name": "Mississippi",
+	"state_abbr": "MS",
+	"state_capital": "Jackson"
+}, {
+	"state_id": 25,
+	"state_name": "Missouri",
+	"state_abbr": "MO",
+	"state_capital": "Jefferson City"
+}, {
+	"state_id": 26,
+	"state_name": "Montana",
+	"state_abbr": "MT",
+	"state_capital": "Helena"
+}, {
+	"state_id": 27,
+	"state_name": "Nebraska",
+	"state_abbr": "NE",
+	"state_capital": "Lincoln"
+}, {
+	"state_id": 28,
+	"state_name": "Nevada",
+	"state_abbr": "NV",
+	"state_capital": "Carson City"
+}, {
+	"state_id": 29,
+	"state_name": "New Hampshire",
+	"state_abbr": "NH",
+	"state_capital": "Concord"
+}, {
+	"state_id": 30,
+	"state_name": "New Jersey",
+	"state_abbr": "NJ",
+	"state_capital": "Trenton"
+}, {
+	"state_id": 31,
+	"state_name": "New Mexico",
+	"state_abbr": "NM",
+	"state_capital": "Santa Fe"
+}, {
+	"state_id": 32,
+	"state_name": "New York",
+	"state_abbr": "NY",
+	"state_capital": "Albany"
+}, {
+	"state_id": 33,
+	"state_name": "North Carolina",
+	"state_abbr": "NC",
+	"state_capital": "Raleigh"
+}, {
+	"state_id": 34,
+	"state_name": "North Dakota",
+	"state_abbr": "ND",
+	"state_capital": "Bismarck"
+}, {
+	"state_id": 35,
+	"state_name": "Ohio",
+	"state_abbr": "OH",
+	"state_capital": "Columbus"
+}, {
+	"state_id": 36,
+	"state_name": "Oklahoma",
+	"state_abbr": "OK",
+	"state_capital": "Oklahoma City"
+}, {
+	"state_id": 37,
+	"state_name": "Oregon",
+	"state_abbr": "OR",
+	"state_capital": "Salem"
+}, {
+	"state_id": 38,
+	"state_name": "Pennsylvania",
+	"state_abbr": "PA",
+	"state_capital": "Harrisburg"
+}, {
+	"state_id": 39,
+	"state_name": "Rhode Island",
+	"state_abbr": "RI",
+	"state_capital": "Providence"
+}, {
+	"state_id": 40,
+	"state_name": "South Carolina",
+	"state_abbr": "SC",
+	"state_capital": "Columbia"
+}, {
+	"state_id": 41,
+	"state_name": "South Dakota",
+	"state_abbr": "SD",
+	"state_capital": "Pierre"
+}, {
+	"state_id": 42,
+	"state_name": "Tennessee",
+	"state_abbr": "TN",
+	"state_capital": "Nashville"
+}, {
+	"state_id": 43,
+	"state_name": "Texas",
+	"state_abbr": "TX",
+	"state_capital": "Austin"
+}, {
+	"state_id": 44,
+	"state_name": "Utah",
+	"state_abbr": "UT",
+	"state_capital": "Salt Lake City"
+}, {
+	"state_id": 45,
+	"state_name": "Vermont",
+	"state_abbr": "VT",
+	"state_capital": "Montpelier"
+}, {
+	"state_id": 46,
+	"state_name": "Virginia",
+	"state_abbr": "VA",
+	"state_capital": "Richmond"
+}, {
+	"state_id": 47,
+	"state_name": "Washington",
+	"state_abbr": "WA",
+	"state_capital": "Olympia"
+}, {
+	"state_id": 48,
+	"state_name": "West Virginia",
+	"state_abbr": "WV",
+	"state_capital": "Charleston"
+}, {
+	"state_id": 49,
+	"state_name": "Wisconsin",
+	"state_abbr": "WI",
+	"state_capital": "Madison"
+}, {
+	"state_id": 50,
+	"state_name": "Wyoming",
+	"state_abbr": "WY",
+	"state_capital": "Cheyenne"
+}, {
+	"state_id": 51,
+	"state_name": "District of Columbia",
+	"state_abbr": "DC",
+	"state_capital": null
+}, {
+	"state_id": 52,
+	"state_name": "Puerto Rico",
+	"state_abbr": "PR",
+	"state_capital": "San Juan"
+}, {
+	"state_id": 53,
+	"state_name": "Virgin Islands",
+	"state_abbr": "VI",
+	"state_capital": "Charlotte Amalie"
+}, {
+	"state_id": 54,
+	"state_name": "Guam",
+	"state_abbr": "GU",
+	"state_capital": "Hagåtña"
+}]
