@@ -172,6 +172,7 @@ export default {
     -moz-osx-font-smoothing: grayscale;
     width:100%;
     height:100%;
+    background: #E6E9EC;
     .map-content{
       height: calc(100% - 70px);
       width: 100%;

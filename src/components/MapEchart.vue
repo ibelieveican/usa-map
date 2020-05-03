@@ -95,6 +95,7 @@ export default {
     },
     drawMapChart () {
       let option = {
+        backgroundColor: 'transparent',
         zoom: 0.6,
         title: {
         },
