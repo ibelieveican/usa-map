@@ -320,7 +320,7 @@ export default {
         }
       }
       p{
-        padding: 30px 0 40px;
+        padding: 15px 0 40px;
         font-size: 18px;
         color: #83A7EC;
         text-align: center;
