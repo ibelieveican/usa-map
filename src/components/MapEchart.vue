@@ -43,8 +43,8 @@ export default {
             width: 15
         },
         Hawaii: {
-            left: -110,        // 夏威夷
-            top: 28,
+            left: -113,        // 夏威夷
+            top: 25,
             width: 5
         },
         'Puerto Rico': {       // 波多黎各

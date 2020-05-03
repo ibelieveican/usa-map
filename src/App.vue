@@ -4,9 +4,10 @@
     <div class="map-content">
       <MapEchart :statesPerception="statesPerception" :stateReopeningStatus="stateReopeningStatus"></MapEchart>
       <div class="panel left-panel">
-        <PanelTemp class="perception" :title="'Public Perception on Reopening'" style="margin-top:80px;">
+        <PanelTemp class="perception" :title="'Public Perception on Reopening'" style="margin-top:80px;min-height:110px;max-height:110px;">
           <ul class="info-list" slot="content">
-            <li><span>United States</span><span>{{Math.round(perception * 100)}}%</span></li>
+            <li><span>United States</span><span>{{Math.round(UnitedStates.perception * 100)}}%</span></li>
+            <li><span>Last update</span><span>{{UnitedStates.date}}</span></li>
           </ul>
         </PanelTemp>
         <PanelTemp class="flex-grow" :title="'Top States by Public Perception'" style="margin-top:80px;">
@@ -59,6 +60,7 @@ export default {
       perception: 0,
       statesPerception: [],
       stateReopeningStatus: [],
+      UnitedStates:{},
       allObj: [
         {
           name: 'Confirmed cases (US)',
@@ -143,7 +145,8 @@ export default {
       let sendData = {}
       let successCallBack = (res) => {
         let resObj = res.data
-        this.perception = resObj.find(v => v.daily_perception_id === resObj.length).perception
+        console.log(resObj.find(v => v.daily_perception_id === resObj.length))
+        this.UnitedStates = resObj.find(v => v.daily_perception_id === resObj.length)
       }
       this.$api.us_daily_perception({
         data: sendData,

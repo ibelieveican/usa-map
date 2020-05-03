@@ -1,6 +1,5 @@
 <template>
   <header class="header-content">
-    <img src="../assets/img/logo.png" alt="">
     <span>Covid-19 Reopening Readiness and Public Perception</span>
   </header>
 </template>
@@ -16,17 +15,20 @@ export default {
     height: 70px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0 20px;
     width: 100%;
     background: #000000;
     box-sizing: border-box;
+    background-image: url('../assets/img/logo.png');
+    background-position: 20px center;
+    background-repeat: no-repeat;
     img{
       display: inline-flex;
       height: 44px;
     }
     span{
-      font-size: 16px;
+      font-size: 19px;
       color: #CBD0DB;
     }
   }
