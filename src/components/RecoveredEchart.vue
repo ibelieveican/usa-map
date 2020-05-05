@@ -4,10 +4,19 @@
 
 <script>
 export default {
-  name: '',
+  name: 'RecoveredEchart',
+  props: ['clientWidth'],
   data () {
     return {
-      chart: null
+      chart: null,
+      chartData: {}
+    }
+  },
+  watch: {
+    clientWidth () {
+      if (this.chart) {
+        this.drawChart()
+      }
     }
   },
   methods: {
@@ -15,15 +24,16 @@ export default {
       let sendData = {}
       let successCallBack = (res) => {
         let resObj = res.data
-        this.drawChart(resObj)
+        this.chartData = resObj
+        this.drawChart()
       }
       this.$api.historical({
         data: sendData,
         success: successCallBack
       })
     },
-    drawChart (resObj) {
-      let recoveredObj = resObj.timeline.recovered
+    drawChart () {
+      let recoveredObj = this.chartData.timeline.recovered
       let xAxis = Object.keys(recoveredObj).map(item => {
         return item
       }).sort(function(a,b){return recoveredObj[a]-recoveredObj[b]})

@@ -2,11 +2,11 @@
   <div id="app">
     <MapHeader></MapHeader>
     <div class="map-content">
-      <MapEchart :statesPerception="statesPerception" :stateReopeningStatus="stateReopeningStatus"></MapEchart>
+      <MapEchart :clientWidth="clientWidth" :statesPerception="statesPerception" :stateReopeningStatus="stateReopeningStatus"></MapEchart>
       <div class="panel left-panel">
         <PanelTemp class="perception" :title="'Public Perception on Reopening'" style="margin-top:80px;min-height:110px;max-height:110px;">
           <ul class="info-list" slot="content">
-            <li><span>United States</span><span>{{Math.round(UnitedStates.perception * 100)}}%</span></li>
+            <li><span>United States</span><span v-show="UnitedStates && UnitedStates.perception">{{Math.round(UnitedStates.perception * 100)}}%</span></li>
             <li><span>Last update</span><span>{{UnitedStates.date}}</span></li>
           </ul>
         </PanelTemp>
@@ -36,7 +36,7 @@
           </ul>
         </PanelTemp>
         <PanelTemp class="" :title="'Recovered Cases in United States'" style="margin-top:68px;max-height:166px;min-height:166px;">
-          <RecoveredEchart ref="allChart" slot="content"></RecoveredEchart>
+          <RecoveredEchart :clientWidth="clientWidth" slot="content"></RecoveredEchart>
         </PanelTemp>
       </div>
     </div>
@@ -78,7 +78,8 @@ export default {
           name: 'Recovered',
           value: 0
         }
-      ]
+      ],
+      clientWidth: ''
     }
   },
   methods: {
@@ -161,6 +162,10 @@ export default {
   mounted () {
     this.getAllInfoFunc()
     this.getPerceptionFunc()
+    this.clientWidth = document.body.clientWidth
+     window.addEventListener('resize', () => {
+       this.clientWidth = document.body.clientWidth
+    })
   }
 }
 </script>
@@ -216,6 +221,13 @@ export default {
       .allChart{
         height: 120px;
         width: 100%;
+      }
+    }
+  }
+  @media screen and (max-width: 800px) {
+    #app {
+      .panel{
+        display: none;
       }
     }
   }

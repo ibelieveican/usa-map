@@ -18,7 +18,7 @@
 <script>
 export default {
   name: 'MapEchart',
-  props: ['statesPerception', 'stateReopeningStatus'],
+  props: ['statesPerception', 'stateReopeningStatus', 'clientWidth'],
   data () {
     return {
       MapChatArr: [],
@@ -30,6 +30,18 @@ export default {
         'lockdown': '#353B42',
         'partial reopen': '#A6ACB3',
         'reopening': '#B5CDE9'
+      }
+    }
+  },
+  watch: {
+    clientWidth (newVal) {
+      if (newVal <= 800 || newVal > 800) {
+        if (this.mapChart) {
+          this.drawMapChart()
+        }
+        if (this.trendChart && this.showTrendChart) {
+          this.drawTrendChart()
+        }
       }
     }
   },
@@ -96,7 +108,6 @@ export default {
     drawMapChart () {
       let option = {
         backgroundColor: 'transparent',
-        zoom: 0.6,
         title: {
         },
         tooltip: {
@@ -116,29 +127,18 @@ export default {
             return htmlStr
           }
         },
-        toolbox: {
-          show: true,
-          left: 'left',
-          top: 'top',
-          feature: {
-            dataView: {readOnly: false},
-            restore: {},
-            saveAsImage: {}
-          }
-        },
         series: [
           {
             name: '',
             type: 'map',
             roam: true,
-            zoom: 0.6,
+            zoom: this.clientWidth > 800 ? 0.6 : 1,
             map: 'USA',
             emphasis: {
                 label: {
                     show: false
                 }
             },
-            // 文本位置修正
             textFixed: {
                 Alaska: [20, -20]
             },
@@ -160,7 +160,8 @@ export default {
       if (this.trendChart) this.trendChart.clear()
       let successCallBack = (res) => {
         let resObj = res.data
-        this.drawTrendChart(resObj)
+        this.trenChartData = resObj
+        this.drawTrendChart()
       }
       this.trendTitle = params.stateInfo.state_name
       this.showTrendChart = true
@@ -169,10 +170,10 @@ export default {
         success: successCallBack
       })
     },
-    drawTrendChart (resObj) {
+    drawTrendChart () {
       let xAxis = []
       let series = []
-      resObj.forEach(item => {
+      this.trenChartData.forEach(item => {
         xAxis.push(item.date.replace('/2020', ''))
         series.push(item.perception * 100)
       })
@@ -332,5 +333,20 @@ export default {
       }
     }
   }
-
+  @media screen and (max-width: 800px) {
+    .map-echart-box{
+      .map-echart-legend{
+        li{
+          width: auto;
+          padding: 0 5px;
+          width: 100px;
+        }
+      }
+      .perception-trend-box{
+        right: 5px;
+        top: 80px;
+        width: calc(100% - 10px);
+      }
+    }
+  }
 </style>

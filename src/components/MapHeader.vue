@@ -32,4 +32,9 @@ export default {
       color: #CBD0DB;
     }
   }
+  @media screen and (max-width: 800px) {
+    .header-content{
+      background-image: none;
+    }
+  }
 </style>
