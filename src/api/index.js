@@ -48,7 +48,7 @@ const getStates = ({type = 'get', data = {}, success, error}) => {
 
 const all = ({type = 'get', data = {}, success, error}) => {
   sendAxios({
-    url: IS_PROD ? 'https://api.prossier.org/api/allcovid' : '/api/allcovid',
+    url: IS_PROD ? 'https://disease.sh/v2/nyt/usa' : '/api/allcovid',
     type: type,
     data: data,
     success: success,

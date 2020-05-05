@@ -40,7 +40,7 @@
         </PanelTemp>
       </div>
     </div>
-    <div class="bottom-info">Contact cui@umd.edu, Smart Construction Center, University of Maryland</div>
+    <div class="bottom-info"><a href="mailto:cui@umd.edu">Contact us, Smart Construction Center, University of Maryland</a></div>
   </div>
 </template>
 
@@ -66,16 +66,9 @@ export default {
           name: 'Confirmed cases (US)',
           value: 0
         },
-        {
-          name: 'Test Conducted',
-          value: 0
-        },
+
         {
           name: 'Total Deaths',
-          value: 0
-        },
-        {
-          name: 'Recovered',
           value: 0
         }
       ],
@@ -118,21 +111,16 @@ export default {
     getAllInfoFunc () {
       let sendData = {}
       let successCallBack = (res) => {
-        let resObj = res.data
+        let resObj = res.data[res.data.length-1]
         this.allObj.map(item => {
           switch (item.name) {
             case 'Confirmed cases (US)':
                 item.value = resObj['cases']
               break
-            case 'Test Conducted':
-                item.value = resObj['tests']
-              break
             case 'Total Deaths':
                 item.value = resObj['deaths']
               break
-            case 'Recovered':
-                item.value = resObj['recovered']
-              break
+ 
           }
           return item
         })
