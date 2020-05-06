@@ -4,13 +4,13 @@
     <div class="map-content">
       <MapEchart :clientWidth="clientWidth" :statesPerception="statesPerception" :stateReopeningStatus="stateReopeningStatus"></MapEchart>
       <div class="panel left-panel">
-        <PanelTemp class="perception" :title="'Public Perception on Reopening'" style="margin-top:80px;min-height:110px;max-height:110px;">
+        <PanelTemp class="perception" :title="'Public Support for Reopening'" style="margin-top:80px;min-height:110px;max-height:110px;">
           <ul class="info-list" slot="content">
             <li><span>United States</span><span v-show="UnitedStates && UnitedStates.perception">{{Math.round(UnitedStates.perception * 100)}}%</span></li>
             <li><span>Last update</span><span>{{UnitedStates.date}}</span></li>
           </ul>
         </PanelTemp>
-        <PanelTemp class="flex-grow" :title="'Top States by Public Perception'" style="margin-top:80px;">
+        <PanelTemp class="flex-grow" :title="'Public Perception by States'" style="margin-top:80px;">
           <div slot="content" style="height:100%;">
             <happy-scroll resize smaller-move-v="start" :min-length-v="10" color="#6E6F7D">
               <ul class="info-list">
@@ -40,7 +40,7 @@
         </PanelTemp>
       </div>
     </div>
-    <div class="bottom-info"><a href="mailto:cui@umd.edu">Contact us, Smart Construction Center, University of Maryland</a></div>
+    <div class="bottom-info"><a href="mailto:cui@umd.edu">Contact: cui@umd.edu, Smart Construction Center, University of Maryland</a></div>
   </div>
 </template>
 
