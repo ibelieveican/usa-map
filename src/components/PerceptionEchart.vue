@@ -27,18 +27,17 @@ export default {
         this.chartData = resObj
         this.drawChart()
       }
-      this.$api.allperception({
+      this.$api.us_daily_perception({
         data: sendData,
         success: successCallBack
       })
     },
     drawChart () {
-      let recoveredObj = this.chartData.timeline.recovered
-      let xAxis = Object.keys(recoveredObj).map(item => {
-        return item
-      }).sort(function(a,b){return recoveredObj[a]-recoveredObj[b]})
-      let series = Object.values(recoveredObj).map(item => {
-        return Math.round(item / 1000 )
+      let xAxis = []
+      let series = []
+      this.chartData.forEach(item => {
+        xAxis.push(item.date.replace('/2020', ''))
+        series.push(Math.round(item.perception * 100))
       })
       let option = {
         grid:{
@@ -53,16 +52,14 @@ export default {
           confine: true,
           formatter(params){
            for(let x in params){
-            return params[x].name + '<br/>' +params[x].value + 'k'
+            return params[x].name + '<br/>' +params[x].value + '%'
            }
           }
         },
         xAxis: {
           type: 'category',
           boundaryGap: true,
-          data: xAxis.map(item => {
-            return item.replace('/20', '')
-          }),
+          data: xAxis,
           axisTick: false,
           axisLine: {
             show: true,
@@ -102,7 +99,7 @@ export default {
             textStyle: {
               color: '#131926'
             },
-            formatter: '{value}k'
+            formatter: '{value}%'
           }
         },
         series: [{

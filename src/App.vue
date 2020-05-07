@@ -10,6 +10,9 @@
             <li><span>Last update</span><span>{{UnitedStates.date}}</span></li>
           </ul>
         </PanelTemp>
+        <PanelTemp class="" :title="'us public perception vs time'" style="margin-top:68px;max-height:166px;min-height:166px;">
+          <PerceptionEchart :clientWidth="clientWidth" slot="content"></PerceptionEchart>
+        </PanelTemp>
         <PanelTemp class="flex-grow" :title="'Public Perception by States'" style="margin-top:80px;">
           <div slot="content" style="height:100%;">
             <happy-scroll resize smaller-move-v="start" :min-length-v="10" color="#6E6F7D">
@@ -49,11 +52,12 @@ import PanelTemp from './components/PanelTemp'
 import MapHeader from '@components/MapHeader'
 import MapEchart from '@components/MapEchart'
 import RecoveredEchart from '@components/RecoveredEchart'
+import PerceptionEchart from '@components/PerceptionEchart'
 
 export default {
   name: 'App',
   components: {
-    PanelTemp, MapHeader, MapEchart, RecoveredEchart
+    PanelTemp, MapHeader, MapEchart, RecoveredEchart, PerceptionEchart
   },
   data () {
     return {
@@ -120,7 +124,7 @@ export default {
             case 'Total Deaths':
                 item.value = resObj['deaths']
               break
- 
+
           }
           return item
         })
@@ -134,7 +138,6 @@ export default {
       let sendData = {}
       let successCallBack = (res) => {
         let resObj = res.data
-        console.log(resObj.find(v => v.daily_perception_id === resObj.length))
         this.UnitedStates = resObj.find(v => v.daily_perception_id === resObj.length)
       }
       this.$api.us_daily_perception({
