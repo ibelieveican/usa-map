@@ -1,12 +1,18 @@
 <template>
   <header class="header-content">
     <span>Covid-19 Reopening Readiness and Public Perception</span>
+    <a class="about" href="javascript:void(0);" @click="toAboutPageFunc">about</a>
   </header>
 </template>
 
 <script>
 export default {
-  name: 'MapHeader'
+  name: 'MapHeader',
+  methods: {
+    toAboutPageFunc () {
+      this.$router.push('./about')
+    }
+  }
 }
 </script>
 
@@ -23,6 +29,7 @@ export default {
     background-image: url('../assets/img/logo.png');
     background-position: 20px center;
     background-repeat: no-repeat;
+    position: relative;
     img{
       display: inline-flex;
       height: 44px;
@@ -31,10 +38,24 @@ export default {
       font-size: 19px;
       color: #CBD0DB;
     }
+    .about{
+      position: absolute;
+      right: 20px;
+      // bottom: 10px;
+      height: 100%;
+      display: inline-flex;
+      align-items: center;
+      font-size: 19px;
+      color: #a6acb4;
+    }
   }
   @media screen and (max-width: 800px) {
     .header-content{
       background-image: none;
+      .about{
+        bottom: 10px;
+        height: auto;
+      }
     }
   }
 </style>

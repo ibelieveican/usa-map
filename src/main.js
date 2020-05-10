@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
+import router from './router/index'
 import Api from './api/index'
 import echarts from 'echarts'
 import walden from './assets/echartstheme/walden.project'
@@ -13,5 +14,8 @@ Vue.use(HappyScroll)
 Vue.config.productionTip = false
 
 new Vue({
-  render: h => h(App),
-}).$mount('#app')
+  el: '#app',
+  router,
+  components: { App },
+  template: '<App/>'
+})
