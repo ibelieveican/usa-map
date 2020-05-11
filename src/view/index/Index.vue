@@ -10,7 +10,7 @@
             <li><span>Last update</span><span>{{UnitedStates.date}}</span></li>
           </ul>
         </PanelTemp>
-        <PanelTemp class="" :title="'us public perception vs time'" style="margin-top:68px;max-height:166px;min-height:166px;">
+        <PanelTemp class="" :title="'Public Support for Reopening in the U.S.'" style="margin-top:68px;max-height:166px;min-height:166px;">
           <PerceptionEchart :clientWidth="clientWidth" slot="content"></PerceptionEchart>
         </PanelTemp>
         <PanelTemp class="flex-grow" :title="'Public Perception by States'" style="margin-top:80px;">
@@ -174,7 +174,7 @@ export default {
     .bottom-info{
       position: fixed;
       bottom: 20px;
-      font-size: 16px;
+      font-size: 12px;
       color: #8C939A;
       text-align: center;
       width: 100%;
