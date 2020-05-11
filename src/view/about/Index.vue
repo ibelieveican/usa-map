@@ -40,8 +40,12 @@ export default {
         }
       }
       img{
-        width: 100%;
-        padding-top: 20px;
+        display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+        padding-top: 30px;
+        padding-bottom: 30px;
         + p{
           margin-top: 20px;
         }

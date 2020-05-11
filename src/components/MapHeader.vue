@@ -1,7 +1,8 @@
 <template>
   <header class="header-content">
     <span>Covid-19 Reopening Readiness and Public Perception</span>
-    <a class="about" href="javascript:void(0);" @click="toAboutPageFunc">about</a>
+    <a class="home" href="javascript:void(0);" @click="toHomePageFunc">Home</a>
+    <a class="about" href="javascript:void(0);" @click="toAboutPageFunc">About</a>
   </header>
 </template>
 
@@ -11,6 +12,9 @@ export default {
   methods: {
     toAboutPageFunc () {
       this.$router.push('./about')
+    },
+    toHomePageFunc () {
+      this.$router.push('./')
     }
   }
 }
@@ -41,6 +45,16 @@ export default {
     .about{
       position: absolute;
       right: 20px;
+      // bottom: 10px;
+      height: 100%;
+      display: inline-flex;
+      align-items: center;
+      font-size: 19px;
+      color: #a6acb4;
+    }
+    .home{
+      position: absolute;
+      right: 80px;
       // bottom: 10px;
       height: 100%;
       display: inline-flex;
